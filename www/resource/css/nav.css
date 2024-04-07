@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.nav_center {
+    width: 70vw;
+    height: 3rem;
+    margin: 0 auto;
+}
+
+.navigator {
+    width: 40rem;
+    height: 3rem;
+
+    position: absolute;
+    right: 15%;
+
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navigator li {
+    float: left;
+
+    width: 10rem;
+    height: 3rem;
+
+    right: 0;
+}
+
+.navigator a:hover {
+    opacity: 0.5;
+}
+
+/*40rem * 0.625 = 400px, * 1.4 calibration 70vw*/
+@media (max-width:calc(40rem * 0.625 * 1.4)) {
+    nav {
+        width: 100vw;
+        height: 6rem;
+    }
+
+    .nav_center {
+        width: 100vw;
+        min-width: 20rem;
+        height: 6rem;
+    }
+
+    .navigator {
+        width: 20rem;
+        height: 6rem;
+        left: 25%;
+    }
+
+    .navigator li {
+        width: 10rem;
+        height: 3rem;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>MintAndChoco</title>
+  <meta name="description" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="Resources/Icon/Icon.png" />
+  <link type="text/css" rel="stylesheet" href="Framework/main.css" />
+  <style media="screen">
+    html,
+    body {
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+  <script type="importmap">
+    {
+    "imports": {
+        "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.152.2/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="Framework/application.js"></script>
+</head>
+
+<body oncontextmenu="return false">
+  <div id="container"></div>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+.footer_center {
+    width: 70vw;
+    height: 5rem;
+    margin: 0 auto;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cc {
+    float: left;
+
+    width: 55rem;
+    height: 5rem;
+
+    line-height: 5rem;
+}
+
+.cc a:hover {
+    opacity: 0.5;
+}
+
+.license {
+    float: right;
+
+    width: 6rem;
+    height: 5rem;
+
+    line-height: 5rem;
+}
+
+.license:hover {
+    opacity: 0.5;
+}
+
+.email {
+    float: right;
+    width: 4rem;
+    height: 4rem;
+}
+
+.email:hover {
+    opacity: 0.5;
+}
+
+.email svg {
+    float: left;
+
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+}
+
+/*70rem * 0.625 = 700px*/
+@media (max-width:calc(70rem * 0.625)) {
+    .footer_center {
+        height: 8rem;
+
+        font-size: 1rem;
+    }
+
+    .cc {
+        width: 70vw;
+        height: 4rem;
+        line-height: 2rem;
+
+        left: 25%;
+
+        float: left;
+    }
+
+    .cc img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .license {
+        width: 35vw;
+        height: 4rem;
+        float: left;
+
+        line-height: 4rem;
+    }
+
+    .email {
+        width: 35vw;
+        height: 4rem;
+        float: left;
+    }
+}
+
+/*40rem * 0.625 = 400px*/
+@media (max-width:calc(40rem * 0.625 * 1.4)) {
+    footer {
+        top: 98rem;
+    }
+}
+
+/*20rem * 0.625 = 200px*/
+@media (max-width:calc(20rem*0.625)) {
+    .cc {
+        font-size: 0.5rem;
+    }
+
+    .cc img {
+        width: 1rem;
+        height: 1rem;
+    }
+}

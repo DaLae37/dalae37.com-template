@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+.main_center {
+    background-color: beige;
+
+    width: 70vw;
+    height: 100%;
+
+    position: absolute;
+
+    margin-left: 15vw;
+}
+
+.rotation {
+    background-color: beige;
+
+    position: absolute;
+    width: 25rem;
+    height: 10rem;
+
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
+.rotation li {
+    float: left;
+    width: 10rem;
+    height: 10rem;
+
+    animation: rotate 10s infinite linear;
+}
+
+.rotation li:first-child {
+    margin-right: 5rem;
+}
+
+.rotation img {
+    width: 10rem;
+    height: 10rem;
+
+    -webkit-user-drag: none;
+}
+
+/*Rotate Logo Images*/
+@keyframes rotate {
+    from {
+        transform: rotateX(10deg) rotateY(0deg);
+    }
+
+    to {
+        transform: rotateX(10deg) rotateY(360deg);
+    }
+}
+
+/*50rem * 0.625 = 500px*/
+@media (max-width:calc(50rem*0.625)) {
+    .rotation {
+        margin-left: 3rem;
+    }
+}
+
+/*40rem * 0.625 = 400px*/
+@media (max-width:calc(40rem*0.625)) {
+    .rotation {
+        width: 10rem;
+    }
+    .rotation li:nth-child(2) {
+        display: none;
+    }
+}
+
+/*System Light Mode*/
+@media (prefers-color-scheme : light) {
+    .main_center {
+        background-color: rgb(222, 255, 222);
+    }
+
+    .rotation {
+        background-color: rgb(222, 255, 222);
+    }
+}
+
+/*System Dark Mode*/
+@media (prefers-color-scheme : dark) {
+    .main_center {
+        background-color: rgb(22,22,22);
+    }
+
+    .rotation {
+        background-color: rgb(22,22,22);
+    }
+}
+
+/*40rem * 0.625 = 400px, * 1.4 calibration 70vw*/
+@media (max-width:calc(40rem * 0.625 * 1.4)) {
+    main {
+        top: 13rem;
+    }
+}

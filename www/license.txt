@@ -1,0 +1,7 @@
+Font
+Noto Sans Korean
+https://fonts.google.com/noto/specimen/Noto+Sans+KR/about
+
+SVG Icons
+GitHub, Naver, YouTube, Gamil, LinkedIN, ORCID, Facebook, Instagram, X, Steam
+https://simpleicons.org/

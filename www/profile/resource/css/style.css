@@ -1,0 +1,215 @@
+main {
+    height: 200rem;
+}
+
+footer {
+    top: 210rem;
+}
+
+.main_center {
+    min-width: 25rem;
+}
+
+.navigator li:first-child {
+    text-decoration: underline;
+}
+
+.profile_information {
+    width: 60vw;
+    height: 33rem;
+
+    margin-left: 5vw;
+    margin-top: 5rem;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.profile_information tr {
+    width: 50vw;
+    height: 5.5rem;
+}
+
+.profile_information td {
+    height: 5.5rem;
+}
+
+.profile_information td:first-child {
+    width: 10rem;
+}
+
+.profile_information td:nth-child(n + 2) {
+    width: calc(50vw - 10rem);
+}
+
+.profile_information ul {
+    width: 100%;
+    height: 5.5rem;
+}
+
+.profile_information li {
+    float: left;
+
+    margin-left: 1rem;
+
+    line-height: 5.5rem;
+}
+
+.profile_information tr:nth-child(n+5) li {
+    float: left;
+
+    margin-left: 2rem;
+
+    line-height: 0;
+}
+
+.profile_information tr:nth-child(n+5) a {
+    float: left;
+}
+
+.profile_information svg {
+    width: 3rem;
+    height: 3rem;
+
+    background-color: inherit;
+
+    margin: 1.25rem 0.75rem;
+}
+
+.gamer p {
+    width: 10rem;
+
+    line-height: 5.5rem;
+}
+
+.profile_download {
+    display: block;
+
+    width: 13rem;
+    height: 3rem;
+
+    margin-left: calc((100% - 13rem) / 2);
+    margin-top: 3rem;
+
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    line-height: 3rem;
+    text-align: center;
+
+    border: 0.1rem solid;
+}
+
+.resume {
+    width: 40vw;
+    height: auto;
+    max-height: 128rem;
+    aspect-ratio: calc(724 / 1024);
+
+    margin-left: calc((100% - 40vw) / 2);
+    margin-top: 3rem;
+}
+
+/*150rem * 0.625 = 1500px*/
+@media (max-width:calc(150rem*0.625)) {
+    main {
+        height: 175rem;
+    }
+
+    footer {
+        top: 185rem;
+    }
+}
+
+/*125rem * 0.625 = 1250px*/
+@media (max-width:calc(125rem*0.625)) {
+    main {
+        height: 150rem;
+    }
+
+    footer {
+        top: 160rem;
+    }
+}
+
+/*100rem * 0.625 = 1000px*/
+@media (max-width:calc(100rem*0.625)) {
+    main {
+        height: 125rem;
+    }
+
+    footer {
+        top: 135rem;
+    }
+
+    .profile_information li {
+        line-height: 3rem;
+    }
+
+    .profile_information td:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .profile_information td:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .sns li {
+        height: 5rem;
+    }
+
+    .gamer p {
+        line-height: 3rem;
+    }
+
+    .profile_information svg {
+        width: 2rem;
+        height: 2rem;
+        margin: 1.5rem 0.75rem;
+    }
+}
+
+/*40rem * 0.625 = 400px, * 1.4 calibration 70vw*/
+@media (max-width:calc(40rem * 0.625 * 1.4)) {
+    main {
+        height: 100rem;
+    }
+
+    footer {
+        top: 113rem;
+    }
+
+    .sns li {
+        height: 3rem;
+    }
+
+    .profile_information svg {
+        width: 1rem;
+        height: 1rem;
+        margin: 1rem 0.75rem;
+    }
+}
+
+/*System Light Mode*/
+@media (prefers-color-scheme : light) {
+    .profile_information td {
+        background-color: rgb(244, 255, 244);
+    }
+
+    .profile_download {
+        background-color: #FFFFFF;
+    }
+}
+
+/*System Dark Mode*/
+@media (prefers-color-scheme : dark) {
+    .profile_information td {
+        background-color: rgb(88, 88, 88);
+    }
+
+    .profile_download {
+        background-color: rgb(22, 22, 22);
+    }
+}
